@@ -1,0 +1,7 @@
+FanVault Network Architecture
+-----------------------------
+VLAN Configuration: pending
+
+Front-End (FE) VM IP: pending
+Back-End (BE) VM IP: pending
+Database (DB) VM IP: pending
