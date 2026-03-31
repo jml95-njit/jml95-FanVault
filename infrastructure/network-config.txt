@@ -3,5 +3,5 @@ FanVault Network Architecture
 VLAN Configuration: pending
 
 Front-End (FE) VM IP: pending
-Back-End (BE) VM IP: pending
+Back-End (BE) VM IP: 192.168.109.129
 Database (DB) VM IP: pending
