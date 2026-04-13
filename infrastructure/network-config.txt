@@ -1,7 +1,15 @@
-FanVault Network Architecture
------------------------------
-VLAN Configuration: pending
+FanVault Network Architecture - Phase 1 Complete
+-----------------------------------------------
+VLAN Name: FanVault-VLAN
 
-Front-End (FE) VM IP: pending
-Back-End (BE) VM IP: 192.168.109.129
-Database (DB) VM IP: 192.168.109.131
+[Front-End VM]
+Internal IP: 192.168.10.10
+Role: Web Server / SSH Gateway
+
+[Backend VM]
+Internal IP: 192.168.10.20
+Role: API Server (Hardened)
+
+[Database VM]
+Internal IP: 192.168.10.30
+Role: MongoDB Server (Hardened)
