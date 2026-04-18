@@ -1,15 +1,20 @@
-FanVault Network Architecture - Phase 1 Complete
------------------------------------------------
-VLAN Name: FanVault-VLAN
+cat <<EOF > ~/fanvault/infrastructure/firewall-rules.md
+# FanVault Firewall Configuration
 
-[Front-End VM]
-Internal IP: 192.168.10.10
-Role: Web Server / SSH Gateway
+## Front-End (192.168.10.10)
+- Allow 22 (SSH) from Anywhere
+- Allow 4200 (Angular) from Anywhere
 
-[Backend VM]
-Internal IP: 192.168.10.20
-Role: API Server (Hardened)
+## Backend (192.168.10.20)
+- Allow 22 (SSH) only from 192.168.10.10
+- Allow 3000 (API) only from 192.168.10.10
 
-[Database VM]
-Internal IP: 192.168.10.30
-Role: MongoDB Server (Hardened)
+## Database (192.168.10.30)
+- Allow 22 (SSH) only from 192.168.10.10
+- Allow 27017 (MongoDB) only from 192.168.10.20
+EOF
+
+cd ~/fanvault
+git add infrastructure/firewall-rules.md
+git commit -m "Security: Documented full 3-tier firewall rules"
+git push origin master
