@@ -139,3 +139,191 @@
 [2026-05-10T02:57:50.323Z] [INFO] Incoming Request: POST /api/login
 [2026-05-10T02:57:50.359Z] [SUCCESS] Full MFA Login successful for: JeremyAdmin
 [2026-05-10T02:57:50.399Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T03:02:26.661Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T03:02:26.671Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T03:02:30.418Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T03:02:31.157Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T03:07:02.983Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:07:04.360Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:07:17.462Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:07:17.503Z] [WARNING] Failed MFA attempt for: test
+[2026-05-10T03:07:19.876Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:07:19.914Z] [WARNING] Failed MFA attempt for: test
+[2026-05-10T03:07:31.687Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:07:43.282Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:07:48.329Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:08:28.881Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:08:38.550Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:10:09.197Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:10:09.566Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:10:09.691Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:10:22.337Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:10:23.723Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:10:23.996Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:10:24.225Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:10:25.294Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:10:25.436Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:10:25.563Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:10:25.680Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:13:46.297Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T03:13:46.304Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T03:14:15.142Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:14:15.230Z] [SUCCESS] User registered with MFA: test13
+[2026-05-10T03:14:20.070Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T03:14:20.074Z] [WARNING] Registration failed: Username "test13" already exists.
+[2026-05-10T03:14:45.475Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:14:46.718Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:14:56.869Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T03:14:56.904Z] [SUCCESS] MFA Login: test13
+[2026-05-10T03:14:56.936Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T03:15:05.121Z] [INFO] Incoming Request: GET /api/tour?q=taylor
+[2026-05-10T03:15:05.178Z] [INFO] Incoming Request: GET /api/search?q=taylor
+[2026-05-10T03:15:09.119Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T03:15:09.121Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T03:15:10.328Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T03:15:10.329Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T03:15:16.905Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T03:15:16.908Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T03:15:17.737Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T03:15:17.738Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T03:15:17.844Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T03:15:17.846Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T03:15:17.956Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T03:15:17.958Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T16:54:45.260Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T16:54:45.271Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T16:55:04.127Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T16:55:04.698Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T16:55:11.186Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T16:55:11.190Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T16:55:28.819Z] [INFO] Incoming Request: GET /api/search?q=baby%20keem
+[2026-05-10T16:55:28.821Z] [INFO] Incoming Request: GET /api/tour?q=baby%20keem
+[2026-05-10T16:55:33.886Z] [INFO] Incoming Request: GET /api/search?q=baby%20keem
+[2026-05-10T16:55:33.889Z] [INFO] Incoming Request: GET /api/tour?q=baby%20keem
+[2026-05-10T16:55:39.430Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T16:55:39.433Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T16:55:43.706Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T16:55:43.711Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T16:56:22.454Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T16:56:22.456Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T16:56:39.399Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:56:42.909Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:56:44.133Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:56:44.853Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:57:11.485Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:57:15.902Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:57:31.441Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:57:31.476Z] [WARNING] Invalid MFA: test13
+[2026-05-10T16:57:35.608Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:57:35.643Z] [WARNING] Invalid MFA: test13
+[2026-05-10T16:57:44.827Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:57:44.862Z] [WARNING] Invalid MFA: test13
+[2026-05-10T16:57:45.583Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:57:45.620Z] [WARNING] Invalid MFA: test13
+[2026-05-10T16:58:02.844Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:58:02.877Z] [WARNING] Invalid MFA: test13
+[2026-05-10T16:58:04.154Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:58:04.190Z] [WARNING] Invalid MFA: test13
+[2026-05-10T16:58:24.793Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:58:26.300Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T16:59:29.572Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T16:59:29.652Z] [SUCCESS] User registered with MFA: jeremyadmin
+[2026-05-10T16:59:55.064Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:01.829Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:01.863Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:03.150Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:03.184Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:03.934Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:03.969Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:04.467Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:04.501Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:04.925Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:04.959Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:05.217Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:05.252Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:05.357Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:05.390Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:05.687Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:05.720Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:06.236Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:06.273Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:06.418Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:06.453Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:06.852Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:06.886Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:06.962Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:06.995Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:07.072Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:07.108Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:00:07.199Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:00:07.232Z] [WARNING] Invalid MFA: jeremyadmin
+[2026-05-10T17:01:36.920Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T17:01:36.926Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T17:02:17.065Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:02:17.293Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:02:17.339Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:02:17.523Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:02:24.784Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:02:24.826Z] [SUCCESS] MFA Login: test13
+[2026-05-10T17:02:24.862Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T17:02:33.883Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:02:40.714Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T17:02:40.751Z] [SUCCESS] MFA Login: test13
+[2026-05-10T17:02:40.778Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T17:02:46.032Z] [INFO] Incoming Request: GET /api/search?q=baby%20keem
+[2026-05-10T17:02:46.037Z] [INFO] Incoming Request: GET /api/tour?q=baby%20keem
+[2026-05-10T17:02:48.782Z] [INFO] Incoming Request: GET /api/search?q=baby%20keem
+[2026-05-10T17:02:56.105Z] [INFO] Incoming Request: GET /api/tour?q=baby%20keem
+[2026-05-10T17:03:53.368Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T17:03:53.380Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T17:03:59.096Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T17:04:02.713Z] [INFO] Incoming Request: GET /api/search?q=baby%20keem
+[2026-05-10T17:04:02.718Z] [INFO] Incoming Request: GET /api/tour?q=baby%20keem
+[2026-05-10T17:04:19.624Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T17:04:19.628Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T17:04:28.378Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T17:04:28.381Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T18:45:21.257Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T18:45:44.930Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T18:45:51.566Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T18:45:51.570Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T18:45:55.499Z] [INFO] Incoming Request: GET /api/tour?q=baby%20keem
+[2026-05-10T18:45:55.502Z] [INFO] Incoming Request: GET /api/search?q=baby%20keem
+[2026-05-10T18:49:53.646Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T18:49:58.172Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T18:49:58.176Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T18:50:17.485Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T18:50:32.946Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T18:50:32.988Z] [SUCCESS] MFA Login: test13
+[2026-05-10T18:50:33.024Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T18:59:11.185Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T18:59:11.194Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T18:59:15.413Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T18:59:21.664Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T18:59:21.726Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T18:59:26.287Z] [INFO] Incoming Request: GET /api/tour?q=baby
+[2026-05-10T18:59:26.289Z] [INFO] Incoming Request: GET /api/search?q=baby
+[2026-05-10T18:59:29.738Z] [INFO] Incoming Request: GET /api/tour?q=baby%20keem
+[2026-05-10T18:59:29.739Z] [INFO] Incoming Request: GET /api/search?q=baby%20keem
+[2026-05-10T19:00:11.182Z] [INFO] Incoming Request: GET /api/tour?q=%3Cscript%3Ealert(%22hacked%22)%3C/script%3E
+[2026-05-10T19:00:11.185Z] [INFO] Incoming Request: GET /api/search?q=%3Cscript%3Ealert(%22hacked%22)%3C/script%3E
+[2026-05-10T19:03:03.305Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T19:03:03.310Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T19:03:12.242Z] [INFO] Incoming Request: GET /api/tour?q=%3Cscript%3Ealert(%22hacked%22)%3C/script%3E
+[2026-05-10T19:03:12.243Z] [SECURITY ALERT] Malicious proxy request blocked! Input: <script>alert("hacked")</script>
+[2026-05-10T19:03:12.250Z] [INFO] Incoming Request: GET /api/search?q=%3Cscript%3Ealert(%22hacked%22)%3C/script%3E
+[2026-05-10T19:03:12.252Z] [SECURITY ALERT] Malicious search blocked! IP: ::ffff:192.168.10.10 | Input: <script>alert("hacked")</script>
+[2026-05-10T20:10:19.608Z] [INFO] Incoming Request: GET /api/search?q=BABY%20KEEM
+[2026-05-10T20:10:19.614Z] [INFO] Incoming Request: GET /api/tour?q=BABY%20KEEM
+[2026-05-10T20:17:02.313Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T20:17:05.452Z] [INFO] Incoming Request: GET /api/search?q=taylor
+[2026-05-10T20:17:05.454Z] [INFO] Incoming Request: GET /api/tour?q=taylor
+[2026-05-10T20:17:16.989Z] [INFO] Incoming Request: GET /api/tour?q=baby%20keem
+[2026-05-10T20:17:16.992Z] [INFO] Incoming Request: GET /api/search?q=baby%20keem
+[2026-05-10T20:26:33.819Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T20:26:33.830Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T20:26:38.038Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T20:26:41.548Z] [INFO] Incoming Request: GET /api/search?q=baby%20keem
+[2026-05-10T20:26:41.553Z] [INFO] Incoming Request: GET /api/tour?q=baby%20keem
+[2026-05-10T20:26:48.950Z] [INFO] Incoming Request: GET /api/tour?q=taylor
+[2026-05-10T20:26:48.955Z] [INFO] Incoming Request: GET /api/search?q=taylor
