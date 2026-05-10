@@ -15,6 +15,7 @@ function writeLog(message) {
     fs.appendFileSync('server.log', finalMessage + '\n');
 }
 
+// This is why it logged the request even though the route was missing!
 app.use((req, res, next) => {
     writeLog(`[INFO] Incoming Request: ${req.method} ${req.url}`);
     next();
@@ -25,6 +26,7 @@ const client = new MongoClient(url);
 const dbName = 'fanvault_db';
 const usersCollection = 'users';
 const artistsCollection = 'artists'; 
+const merchCollection = 'merch';
 
 function hashPassword(password) {
     const salt = crypto.randomBytes(16).toString('hex');
@@ -44,31 +46,18 @@ app.post('/api/register', async (req, res) => {
         if (!username || typeof username !== 'string' || !password || typeof password !== 'string') {
             return res.status(400).json({ error: "Invalid input format." });
         }
-
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d!@#$%^&*]).{6,}$/;
         if (!passwordRegex.test(password)) {
-            writeLog(`[REJECTED] Weak password attempt for: ${username}`);
-            return res.status(400).json({ 
-                error: "Password must be at least 6 characters and include uppercase, lowercase, and a number or symbol." 
-            });
+            return res.status(400).json({ error: "Password must be at least 6 characters and include uppercase, lowercase, and a number or symbol." });
         }
-
         const db = client.db(dbName);
-        const users = db.collection(usersCollection);
-        const existingUser = await users.findOne({ username: username });
+        const existingUser = await db.collection(usersCollection).findOne({ username: username });
+        if (existingUser) return res.status(409).json({ error: "Username already exists." });
         
-        if (existingUser) {
-            return res.status(409).json({ error: "Username already exists." });
-        }
-
         const securedPassword = hashPassword(password);
-        await users.insertOne({ username, passwordHash: securedPassword, createdAt: new Date() });
-        
-        writeLog(`[SUCCESS] New user registered: ${username}`);
+        await db.collection(usersCollection).insertOne({ username, passwordHash: securedPassword, createdAt: new Date() });
         res.status(201).json({ message: "User registered successfully!" });
-
     } catch (error) {
-        writeLog(`[ERROR] Registration Error: ${error.message}`);
         res.status(500).json({ error: "Internal Server Error" });
     }
 });
@@ -76,42 +65,33 @@ app.post('/api/register', async (req, res) => {
 app.post('/api/login', async (req, res) => {
     try {
         const { username, password } = req.body;
-        if (!username || typeof username !== 'string' || !password || typeof password !== 'string') {
-            return res.status(400).json({ error: "Invalid input format." });
-        }
-        const db = client.db(dbName);
-        const users = db.collection(usersCollection);
-        const user = await users.findOne({ username: username });
-        if (!user || !verifyPassword(password, user.passwordHash)) {
-            return res.status(401).json({ error: "Invalid username or password." });
-        }
-        writeLog(`[SUCCESS] Successful login for: ${username}`);
+        if (!username || typeof username !== 'string' || !password || typeof password !== 'string') return res.status(400).json({ error: "Invalid input format." });
+        const user = await client.db(dbName).collection(usersCollection).findOne({ username: username });
+        if (!user || !verifyPassword(password, user.passwordHash)) return res.status(401).json({ error: "Invalid username or password." });
         res.status(200).json({ message: "Login successful!" });
     } catch (error) {
-        writeLog(`[ERROR] Login Error: ${error.message}`);
         res.status(500).json({ error: "Internal Server Error" });
     }
 });
 
-// --- NEW SEARCH API ---
+// THE SEARCH ROUTE
 app.get('/api/search', async (req, res) => {
     try {
         const query = req.query.q;
-        if (!query || typeof query !== 'string') {
-            return res.status(400).json({ error: "Search query required." });
-        }
-
-        const db = client.db(dbName);
-        const artists = db.collection(artistsCollection);
-
-        const results = await artists.find({ 
-            name: { $regex: query, $options: 'i' } 
-        }).toArray();
-
-        writeLog(`[INFO] Search executed for: "${query}". Found ${results.length} results.`);
+        if (!query || typeof query !== 'string') return res.status(400).json({ error: "Search query required." });
+        const results = await client.db(dbName).collection(artistsCollection).find({ name: { $regex: query, $options: 'i' } }).toArray();
         res.status(200).json(results);
     } catch (error) {
-        writeLog(`[ERROR] Search Error: ${error.message}`);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
+});
+
+// THE MISSING MERCH ROUTE!
+app.get('/api/merch', async (req, res) => {
+    try {
+        const results = await client.db(dbName).collection(merchCollection).find({}).toArray();
+        res.status(200).json(results);
+    } catch (error) {
         res.status(500).json({ error: "Internal Server Error" });
     }
 });
@@ -121,17 +101,16 @@ async function startServer() {
         await client.connect();
         writeLog("[SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!");
         
-        // --- SEED DUMMY DATA FOR TESTING ---
         const db = client.db(dbName);
-        const artists = db.collection(artistsCollection);
-        const count = await artists.countDocuments();
-        if (count === 0) {
-            await artists.insertMany([
-                { name: "Taylor Swift", genre: "Pop", nextTour: "London, UK" },
-                { name: "The Weeknd", genre: "R&B", nextTour: "Paris, FR" },
-                { name: "Bad Bunny", genre: "Reggaeton", nextTour: "Miami, FL" }
+        
+        const merchCount = await db.collection(merchCollection).countDocuments();
+        if (merchCount === 0) {
+            await db.collection(merchCollection).insertMany([
+                { name: "World Tour T-Shirt", description: "Official 2026 Tour Merch", price: 35.00 },
+                { name: "Limited Edition Vinyl", description: "Exclusive Colorway", price: 28.00 },
+                { name: "FanVault Festival Hoodie", description: "Premium Heavyweight Cotton", price: 65.00 }
             ]);
-            writeLog("[SYSTEM] Seeded dummy artists into database.");
+            writeLog("[SYSTEM] Seeded dummy merch into database.");
         }
 
         app.listen(port, () => {

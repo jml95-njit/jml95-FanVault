@@ -48,3 +48,23 @@
 [2026-05-10T00:43:33.925Z] [INFO] Search executed for: "weeknd". Found 1 results.
 [2026-05-10T00:43:36.804Z] [INFO] Incoming Request: GET /api/search?q=weeknd
 [2026-05-10T00:43:36.809Z] [INFO] Search executed for: "weeknd". Found 1 results.
+[2026-05-10T00:56:21.536Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T00:56:21.576Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T00:56:25.258Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T00:56:33.960Z] [INFO] Incoming Request: GET /api/search?q=tay
+[2026-05-10T00:56:33.977Z] [INFO] Search executed for: "tay". Found 1 results.
+[2026-05-10T00:56:35.300Z] [INFO] Incoming Request: GET /api/search?q=tay
+[2026-05-10T00:56:35.309Z] [INFO] Search executed for: "tay". Found 1 results.
+[2026-05-10T00:58:07.374Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T00:58:18.003Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T00:58:22.809Z] [INFO] Incoming Request: GET /api/search?q=tay
+[2026-05-10T00:58:22.815Z] [INFO] Search executed for: "tay". Found 1 results.
+[2026-05-10T00:58:24.160Z] [INFO] Incoming Request: GET /api/search?q=tay
+[2026-05-10T00:58:24.165Z] [INFO] Search executed for: "tay". Found 1 results.
+[2026-05-10T00:59:35.633Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T00:59:51.833Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T01:03:53.630Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T01:03:53.658Z] [SYSTEM] Seeded dummy merch into database.
+[2026-05-10T01:03:53.663Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T01:03:58.342Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T01:04:04.086Z] [INFO] Incoming Request: GET /api/search?q=tay
