@@ -68,3 +68,19 @@
 [2026-05-10T01:03:53.663Z] [SYSTEM] FanVault API is actively listening on port 3000
 [2026-05-10T01:03:58.342Z] [INFO] Incoming Request: GET /api/merch
 [2026-05-10T01:04:04.086Z] [INFO] Incoming Request: GET /api/search?q=tay
+[2026-05-10T01:36:07.197Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T01:36:07.213Z] [SYSTEM] Seeded 5 new merch items with images.
+[2026-05-10T01:36:07.219Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T01:37:32.357Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T01:37:33.058Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T01:38:46.204Z] [INFO] Incoming Request: GET /api/search?q=tay
+[2026-05-10T01:38:54.659Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T01:38:59.676Z] [INFO] Incoming Request: GET /api/search?q=weeknd
+[2026-05-10T01:39:00.097Z] [INFO] Incoming Request: GET /api/search?q=weeknd
+[2026-05-10T01:39:11.234Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T01:39:12.053Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T01:39:12.168Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T01:39:16.885Z] [INFO] Incoming Request: GET /api/search?q=weeknd
+[2026-05-10T01:39:18.778Z] [INFO] Incoming Request: GET /api/search?q=weeknd
+[2026-05-10T01:39:52.120Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T01:39:58.951Z] [INFO] Incoming Request: GET /api/merch
