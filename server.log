@@ -1,0 +1,50 @@
+[2026-04-21T00:08:52.803Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-04-21T00:08:52.810Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-04-21T00:14:26.716Z] [INFO] Incoming Request: POST /api/register
+[2026-04-21T00:14:26.781Z] [SUCCESS] New user registered: usertest
+[2026-04-21T00:14:37.291Z] [INFO] Incoming Request: POST /api/login
+[2026-04-21T00:14:37.331Z] [SUCCESS] Successful login for: usertest
+[2026-04-21T00:31:04.290Z] [INFO] Incoming Request: POST /api/login
+[2026-04-21T00:31:04.324Z] [SUCCESS] Successful login for: test
+[2026-04-21T00:31:13.892Z] [INFO] Incoming Request: POST /api/login
+[2026-04-21T00:31:13.924Z] [SUCCESS] Successful login for: test
+[2026-04-21T00:37:51.736Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-04-21T00:37:51.742Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-04-21T00:38:04.721Z] [INFO] Incoming Request: POST /api/login
+[2026-04-21T00:56:02.025Z] [INFO] Incoming Request: POST /api/login
+[2026-04-21T00:56:02.076Z] [SUCCESS] Successful login for: test
+[2026-04-21T01:00:00.862Z] [INFO] Incoming Request: POST /api/register
+[2026-04-21T01:00:00.908Z] [SUCCESS] New user registered: test1
+[2026-04-21T01:00:09.024Z] [INFO] Incoming Request: POST /api/login
+[2026-04-21T01:00:09.056Z] [SUCCESS] Successful login for: test1
+[2026-04-21T01:00:38.833Z] [INFO] Incoming Request: POST /api/login
+[2026-04-21T01:00:39.989Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T00:38:05.846Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T00:38:05.903Z] [SYSTEM] Seeded dummy artists into database.
+[2026-05-10T00:38:05.933Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T00:42:22.986Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T00:42:23.062Z] [SUCCESS] Successful login for: test
+[2026-05-10T00:42:30.561Z] [INFO] Incoming Request: GET /api/search?q=the%20weekend
+[2026-05-10T00:42:30.566Z] [INFO] Search executed for: "the weekend". Found 0 results.
+[2026-05-10T00:42:32.505Z] [INFO] Incoming Request: GET /api/search?q=the%20weekend
+[2026-05-10T00:42:32.509Z] [INFO] Search executed for: "the weekend". Found 0 results.
+[2026-05-10T00:42:39.765Z] [INFO] Incoming Request: GET /api/search?q=Weeknd
+[2026-05-10T00:42:39.771Z] [INFO] Search executed for: "Weeknd". Found 1 results.
+[2026-05-10T00:42:51.411Z] [INFO] Incoming Request: GET /api/search?q=Tay
+[2026-05-10T00:42:51.416Z] [INFO] Search executed for: "Tay". Found 1 results.
+[2026-05-10T00:42:56.120Z] [INFO] Incoming Request: GET /api/search?q=Tay
+[2026-05-10T00:42:56.126Z] [INFO] Search executed for: "Tay". Found 1 results.
+[2026-05-10T00:43:06.788Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T00:43:06.793Z] [INFO] Search executed for: "the kid laroi". Found 0 results.
+[2026-05-10T00:43:08.093Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T00:43:08.098Z] [INFO] Search executed for: "the kid laroi". Found 0 results.
+[2026-05-10T00:43:28.146Z] [INFO] Incoming Request: GET /api/search?q=taylor
+[2026-05-10T00:43:28.151Z] [INFO] Search executed for: "taylor". Found 1 results.
+[2026-05-10T00:43:29.738Z] [INFO] Incoming Request: GET /api/search?q=taylor
+[2026-05-10T00:43:29.743Z] [INFO] Search executed for: "taylor". Found 1 results.
+[2026-05-10T00:43:30.266Z] [INFO] Incoming Request: GET /api/search?q=taylor
+[2026-05-10T00:43:30.271Z] [INFO] Search executed for: "taylor". Found 1 results.
+[2026-05-10T00:43:33.919Z] [INFO] Incoming Request: GET /api/search?q=weeknd
+[2026-05-10T00:43:33.925Z] [INFO] Search executed for: "weeknd". Found 1 results.
+[2026-05-10T00:43:36.804Z] [INFO] Incoming Request: GET /api/search?q=weeknd
+[2026-05-10T00:43:36.809Z] [INFO] Search executed for: "weeknd". Found 1 results.
