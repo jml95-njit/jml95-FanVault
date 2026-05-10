@@ -100,3 +100,42 @@
 [2026-05-10T01:57:13.265Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
 [2026-05-10T01:57:13.266Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
 [2026-05-10T01:57:13.373Z] [INFO] External API Call: Ticketmaster queried for "the kid laroi". Found 5 events.
+[2026-05-10T02:14:43.217Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T02:14:43.225Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T02:15:03.240Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T02:15:04.056Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T02:15:07.465Z] [INFO] Incoming Request: GET /api/tour?q=tay
+[2026-05-10T02:15:07.521Z] [INFO] Incoming Request: GET /api/search?q=tay
+[2026-05-10T02:15:07.680Z] [INFO] External API Call: Ticketmaster queried for "tay". Found 0 events.
+[2026-05-10T02:15:09.673Z] [INFO] Incoming Request: GET /api/tour?q=taylor
+[2026-05-10T02:15:09.676Z] [INFO] Incoming Request: GET /api/search?q=taylor
+[2026-05-10T02:15:09.774Z] [INFO] External API Call: Ticketmaster queried for "taylor". Found 0 events.
+[2026-05-10T02:15:11.090Z] [INFO] Incoming Request: GET /api/tour?q=taylor
+[2026-05-10T02:15:11.091Z] [INFO] Incoming Request: GET /api/search?q=taylor
+[2026-05-10T02:15:11.182Z] [INFO] External API Call: Ticketmaster queried for "taylor". Found 0 events.
+[2026-05-10T02:15:20.529Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T02:15:20.532Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T02:15:20.672Z] [INFO] External API Call: Ticketmaster queried for "the kid laroi". Found 0 events.
+[2026-05-10T02:15:24.766Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T02:15:24.767Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T02:15:24.853Z] [INFO] External API Call: Ticketmaster queried for "the kid laroi". Found 0 events.
+[2026-05-10T02:16:34.607Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T02:16:34.613Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T02:16:39.066Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T02:16:43.965Z] [INFO] Incoming Request: GET /api/search?q=the%20kid%20laroi
+[2026-05-10T02:16:43.969Z] [INFO] Incoming Request: GET /api/tour?q=the%20kid%20laroi
+[2026-05-10T02:16:44.218Z] [INFO] External API Call: Ticketmaster queried for "the kid laroi". Found 5 events.
+[2026-05-10T02:54:07.039Z] [SUCCESS] SECURE LINK ESTABLISHED: Connected to FanVault Database!
+[2026-05-10T02:54:07.048Z] [SYSTEM] FanVault API is actively listening on port 3000
+[2026-05-10T02:56:41.945Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T02:56:43.423Z] [INFO] Incoming Request: GET /api/merch
+[2026-05-10T02:56:57.112Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T02:56:58.818Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T02:57:15.172Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T02:57:15.264Z] [SUCCESS] User registered with MFA: JeremyAdmin
+[2026-05-10T02:57:16.694Z] [INFO] Incoming Request: POST /api/register
+[2026-05-10T02:57:43.323Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T02:57:44.731Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T02:57:50.323Z] [INFO] Incoming Request: POST /api/login
+[2026-05-10T02:57:50.359Z] [SUCCESS] Full MFA Login successful for: JeremyAdmin
+[2026-05-10T02:57:50.399Z] [INFO] Incoming Request: GET /api/merch
