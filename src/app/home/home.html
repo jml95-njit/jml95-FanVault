@@ -1,18 +1,28 @@
 <div class="page-wrapper">
-    <nav>
-        <div class="logo">FanVault</div>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">Login</a>
-            <a href="#">Register</a>
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background-color: #1a1a1a;">
+        <div class="logo" style="font-size: 24px; font-weight: bold; color: #fff;">FanVault</div>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <a routerLink="/home" style="color: #fff; text-decoration: none;">Home</a>
+            <button class="btn" (click)="onLogout()" style="background-color: #ff4d4d; padding: 8px 15px; border-radius: 5px; cursor: pointer;">Log Off</button>
         </div>
     </nav>
-
+    
     <div class="hero">
         <h1>Connect with the Music.</h1>
         <p>Find tour dates, exclusive merch, and more from your favorite artists.</p>
-        <input type="text" class="search-bar" placeholder="Search for an artist, tour, or album...">
-        <button class="btn">Search</button>
+        
+        <input type="text" class="search-bar" [(ngModel)]="searchQuery" (keyup.enter)="onSearch()" placeholder="Search for an artist (e.g., Taylor)...">
+        <button class="btn" (click)="onSearch()">Search</button>
+
+        <div *ngIf="searchAttempted" style="margin-top: 20px; text-align: left; background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;">
+            <h3 style="margin-top: 0;">Search Results:</h3>
+            <p *ngIf="searchResults.length === 0">No artists found matching "{{searchQuery}}".</p>
+            <ul style="list-style: none; padding: 0;">
+                <li *ngFor="let artist of searchResults" style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                    <strong>{{artist.name}}</strong> - Genre: {{artist.genre}} | Next Tour: {{artist.nextTour}}
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div class="section">

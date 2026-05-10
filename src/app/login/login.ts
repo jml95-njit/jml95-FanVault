@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './login.html',
   styleUrls: ['./login.css']
 })
@@ -29,11 +29,12 @@ export class Login {
       password: this.password 
     };
 
-    // Send it to the reverse proxy (/api/login -> 192.168.10.20:3000)
     this.http.post('/api/login', payload).subscribe({
       next: (response: any) => {
         alert('Success! ' + response.message);
-        this.router.navigate(['/home']); // Send them to the dashboard/home page!
+        // This is the "Wristband" the Bouncer looks for
+        localStorage.setItem('session_token', this.username);
+        this.router.navigate(['/home']);
       },
       error: (err) => {
         console.error('Login failed:', err);
