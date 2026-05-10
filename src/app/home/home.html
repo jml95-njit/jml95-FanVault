@@ -28,10 +28,18 @@
             <h3 style="margin-top: 20px; color: #00a0ff;">Live Tour Dates (Powered by Ticketmaster):</h3>
             <p *ngIf="tourResults.length === 0">No upcoming tours found for "{{searchQuery}}".</p>
             <ul style="list-style: none; padding: 0;">
-                <li *ngFor="let event of tourResults" style="padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
-                    <strong>{{event.name}}</strong><br>
-                    🗓️ {{event.date}} | 📍 {{event.venue}} ({{event.city}})<br>
-                    <a [href]="event.url" target="_blank" style="color: #00a0ff; font-size: 14px; text-decoration: none;">Get Tickets &rarr;</a>
+                <li *ngFor="let event of tourResults" style="padding: 15px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                    <div style="font-size: 18px;"><strong>{{event.name}}</strong></div>
+                    <div style="color: #ccc; margin-bottom: 8px;">🗓️ {{event.date}} | 📍 {{event.venue}} ({{event.city}})</div>
+                    
+                    <div style="margin-bottom: 10px; font-size: 14px;" *ngIf="event.socials">
+                        <a *ngIf="event.socials.instagram" [href]="event.socials.instagram" target="_blank" style="margin-right: 15px; color: #E1306C; text-decoration: none;">📷 Instagram</a>
+                        <a *ngIf="event.socials.youtube" [href]="event.socials.youtube" target="_blank" style="margin-right: 15px; color: #FF0000; text-decoration: none;">▶️ YouTube</a>
+                        <a *ngIf="event.socials.twitter" [href]="event.socials.twitter" target="_blank" style="margin-right: 15px; color: #1DA1F2; text-decoration: none;">🐦 Twitter</a>
+                        <a *ngIf="event.socials.website" [href]="event.socials.website" target="_blank" style="margin-right: 15px; color: #fff; text-decoration: none;">🌐 Website</a>
+                    </div>
+
+                    <a [href]="event.url" target="_blank" style="display: inline-block; background-color: #00a0ff; color: #fff; padding: 5px 10px; border-radius: 4px; font-size: 14px; text-decoration: none;">Get Tickets &rarr;</a>
                 </li>
             </ul>
         </div>

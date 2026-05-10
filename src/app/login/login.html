@@ -1,19 +1,22 @@
-<div class="page-wrapper">
-    <div class="form-container">
-        <div class="logo">FanVault</div>
-        <h2>Welcome Back</h2>
-        <p style="color: #aaa; font-size: 14px; margin-bottom: 20px;">Log in to access your account.</p>
+<div class="auth-container">
+  <div class="auth-box">
+    <h2>FanVault Login</h2>
 
-        <input type="text" placeholder="Username" [(ngModel)]="username" name="username" required>
-        
-        <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
-
-        <p *ngIf="errorMessage" style="color: #ff4d4d; font-size: 14px;">{{ errorMessage }}</p>
-
-        <button class="btn" (click)="onLogin()">Log In</button>
-
-        <div class="links">
-            <p>Don't have an account? <a routerLink="/register">Register here</a>.</p>
-        </div>
+    <div *ngIf="!requireMFA">
+      <input type="text" [(ngModel)]="username" placeholder="Username" class="input-field">
+      <input type="password" [(ngModel)]="password" placeholder="Password" class="input-field">
+      <button (click)="onLogin()" class="btn">Log In</button>
+      <p *ngIf="errorMessage" style="color: #ff4d4d;">{{ errorMessage }}</p>
+      <p>New here? <a routerLink="/register">Create an account</a></p>
     </div>
+
+    <div *ngIf="requireMFA" style="text-align: center;">
+      <h3>Two-Factor Authentication</h3>
+      <p style="margin-bottom: 20px;">Open your Authenticator app and enter the 6-digit code for <strong>{{username}}</strong>.</p>
+      <input type="text" [(ngModel)]="mfaCode" placeholder="000000" maxlength="6" class="input-field" style="text-align: center; font-size: 24px; letter-spacing: 5px;">
+      <button (click)="onLogin()" class="btn" style="background-color: #00a0ff;">Verify</button>
+      <p *ngIf="errorMessage" style="color: #ff4d4d; margin-top: 15px;">{{ errorMessage }}</p>
+    </div>
+
+  </div>
 </div>

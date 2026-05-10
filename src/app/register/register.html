@@ -1,19 +1,22 @@
-<div class="page-wrapper">
-    <div class="form-container">
-        <div class="logo">FanVault</div>
-        <h2>Create an Account</h2>
-        <p style="color: #aaa; font-size: 14px; margin-bottom: 20px;">Join to track tours and shop official merch.</p>
+<div class="auth-container">
+  <div class="auth-box">
+    <h2>Join FanVault</h2>
 
-        <input type="text" placeholder="Username" [(ngModel)]="username" name="username" required>
-        
-        <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required>
-
-        <p *ngIf="errorMessage" style="color: #ff4d4d; font-size: 14px;">{{ errorMessage }}</p>
-
-        <button class="btn" (click)="onRegister()">Create Account</button>
-
-        <div class="links">
-            <p>Already have an account? <a routerLink="/login">Login here</a>.</p>
-        </div>
+    <div *ngIf="!qrCodeUrl">
+      <input type="text" [(ngModel)]="username" placeholder="Username" class="input-field">
+      <input type="password" [(ngModel)]="password" placeholder="Password" class="input-field">
+      <button (click)="onRegister()" class="btn">Sign Up</button>
+      <p *ngIf="errorMessage" style="color: #ff4d4d;">{{ errorMessage }}</p>
+      <p>Already a fan? <a routerLink="/login">Log in here</a></p>
     </div>
+
+    <div *ngIf="qrCodeUrl" style="text-align: center;">
+      <h3 style="color: #28a745;">Registration Successful!</h3>
+      <p>Scan this barcode with <strong>Google Authenticator</strong> or <strong>Duo Mobile</strong> to secure your account.</p>
+      <img [src]="qrCodeUrl" alt="MFA QR Code" style="margin: 20px 0; border: 5px solid white; border-radius: 10px;">
+      <p style="font-size: 14px; color: #ccc;">Once scanned, proceed to login to test your 6-digit code.</p>
+      <button routerLink="/login" class="btn">Proceed to Login</button>
+    </div>
+
+  </div>
 </div>
